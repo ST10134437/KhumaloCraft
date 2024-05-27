@@ -7,18 +7,69 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Orders\**" />
+    <Compile Remove="Views\ProductInfoes\**" />
+    <Compile Remove="Views\Products\**" />
     <Compile Remove="wwwroot\css\NewFolder1\**" />
     <Compile Remove="wwwroot\css\NewFolder\**" />
+    <Content Remove="Views\Orders\**" />
+    <Content Remove="Views\ProductInfoes\**" />
+    <Content Remove="Views\Products\**" />
     <Content Remove="wwwroot\css\NewFolder1\**" />
     <Content Remove="wwwroot\css\NewFolder\**" />
+    <EmbeddedResource Remove="Views\Orders\**" />
+    <EmbeddedResource Remove="Views\ProductInfoes\**" />
+    <EmbeddedResource Remove="Views\Products\**" />
     <EmbeddedResource Remove="wwwroot\css\NewFolder1\**" />
     <EmbeddedResource Remove="wwwroot\css\NewFolder\**" />
+    <None Remove="Views\Orders\**" />
+    <None Remove="Views\ProductInfoes\**" />
+    <None Remove="Views\Products\**" />
     <None Remove="wwwroot\css\NewFolder1\**" />
     <None Remove="wwwroot\css\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\OrderController.cs" />
+    <Compile Remove="KhumaloCraftContext.cs" />
+    <Compile Remove="Migrations\20240526174531_FirstMigration.cs" />
+    <Compile Remove="Migrations\20240526174531_FirstMigration.Designer.cs" />
+    <Compile Remove="Migrations\20240527103813_InitialDatabaseSetup.cs" />
+    <Compile Remove="Migrations\20240527103813_InitialDatabaseSetup.Designer.cs" />
+    <Compile Remove="Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Remove="Services\ApplicationDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="Views\Home\Product.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
     <Folder Include="wwwroot\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Orders\Index1.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
 </Project>
